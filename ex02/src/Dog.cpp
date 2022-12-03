@@ -1,12 +1,12 @@
 #include "Dog.hpp"
 
-Dog::Dog() : Animal("Dog")
+Dog::Dog() : AAnimal("Dog")
 {
 	std::cout << "Dog standard constructor called" << std::endl;
 	this->brain = new Brain();
 }
 
-Dog::Dog(const Dog& dog) : Animal(dog)
+Dog::Dog(const Dog& dog) : AAnimal(dog)
 {
 	std::cout << "Dog copy constructor called" << std::endl;
 	this->brain = new Brain();

@@ -11,12 +11,7 @@ FLAGS			=	-Wall -Wextra -Werror -std=c++98 -Wshadow -Wno-shadow
 
 
 SRC_FILES		=	main.cpp\
-					AAnimal.cpp\
-					Dog.cpp\
-					Cat.cpp\
-					WrongAnimal.cpp\
-					WrongCat.cpp\
-					Brain.cpp
+					AMateria.cpp
 
 SRC				=	$(addprefix $(SRC_DIR)/, $(SRC_FILES))
 OBJ				=	$(SRC:$(SRC_DIR)/%.cpp=$(PATH_OBJ)/%.o)
