@@ -11,7 +11,13 @@ FLAGS			=	-Wall -Wextra -Werror -std=c++98 -Wshadow -Wno-shadow
 
 
 SRC_FILES		=	main.cpp\
-					AMateria.cpp
+					AMateria.cpp\
+					Ice.cpp\
+					Cure.cpp\
+					Character.cpp\
+					ICharacter.cpp\
+					MateriaSource.cpp\
+					#IMateriaSource.cpp
 
 SRC				=	$(addprefix $(SRC_DIR)/, $(SRC_FILES))
 OBJ				=	$(SRC:$(SRC_DIR)/%.cpp=$(PATH_OBJ)/%.o)

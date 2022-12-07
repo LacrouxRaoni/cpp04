@@ -3,9 +3,15 @@
 
 #include "AMateria.hpp"
 
-class Ice : AMateria
+class Ice : public AMateria
 {
-
+	public:
+		Ice();
+		~Ice();
+		Ice(const Ice& ice);
+		Ice& operator=(Ice const& ice);
+		AMateria* clone() const;
+		void use(ICharacter& target);
 };
 
 #endif
